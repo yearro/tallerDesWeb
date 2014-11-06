@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posicion DIVS</title>
+	<style>
+	div{
+		padding: 10px;
+	}
+	#capa1{
+		background: black;
+		color: white;
+		margin: auto;
+		position: relative;
+		width: 80%;
+	}
+	#capa2{
+		/*margin-top: 400px;*/
+		/*Desborda el contenido*/
+		background: blue;
+	}
+	#capa3{
+		background: red;
+	}
+	#capa4{
+		background: gray;
+		height: 400px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		/*width: 70%;*/
+		width: 400px;
+	}
+	#capa5{
+		background: yellow;
+		height: 400px;
+		left: 0px;
+		position: absolute;
+		top: 0px;
+		/*width: 25%;*/
+		width: 500px;
+	}
+	</style>
+</head>
+<body>
+	<div id="capa1">
+		Capa 1
+		<div id="capa2">
+			Capa 2
+			<div id="capa3">
+				Capa 3
+			</div>
+		</div>
+		<div id="capa4">Capa 4</div>
+		<div id="capa5">Capa 5</div>
+	</div>
+</body>
+</html>

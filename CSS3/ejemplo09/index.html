@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Enlaces</title>
+	<style>
+	div a { margin: 1em 0; float: left; clear: left; text-decoration: none;}
+	.simple {text-decoration: underline;}
+	.color { border-bottom: medium solid #CC0000;} /*Medio*/
+	.ancho {border-bottom: thick solid;} /*Grueso*/
+	.separado {border-bottom: 1px solid; padding-bottom: .6em;}
+	.discontinuo {border-bottom: thin dashed;} /*Delgado*/
+	.sinlinea{text-decoration: none;}
+	.conimagen{
+		/*padding: 0 0 0 22px;*/
+		padding-left: 22px;
+		background: #FFF url('user.png') no-repeat left center;
+	}
+	#pseudo a{ margin: 1em 0; float: left; clear: left; }
+	#pseudo a.boton {
+  		text-decoration: none;
+  		background: #EEE;
+  		color: #222;
+  		border: 1px outset #CCC;
+  		padding: .1em .5em;
+	}
+	#pseudo a.boton:hover {
+  		background: red;
+	}
+	#pseudo a.boton:active {
+  		border: 1px inset #000;
+  		background-color: yellow;
+	}
+	/*#pseudo a.boton:visited {
+  		background-color: blue;
+	}
+	#pseudo a.boton:link {
+  		background-color: gray;
+	}*/
+
+	</style>
+</head>
+<body>
+	<h1>Estilos para enlaces</h1>
+	<div>
+		<a class="simple" href="#">Enlace con el estilo por defecto</a>
+		<a class="color" href="#">Enlace un subrayado de otro color</a>
+		<a class="ancho" href="#">Enlace con un subrayado muy ancho</a>
+		<a class="separado" href="#">Enlace con un subrayado muy separado</a>
+		<a class="discontinuo" href="#">Enlace con un subrayado discontinuo</a>
+		<a class="sinlinea" href="#">Enlace sin subrayado</a>
+	</div>
+	<hr style="clear:both;">
+	<a class="conimagen" href="#">Hola</a>
+	<hr>
+	<div id="pseudo">
+		<a class="boton" href="#">Guardar</a>
+		<a class="boton" href="#">Enviar</a>
+	</div>
+</body>
+</html>

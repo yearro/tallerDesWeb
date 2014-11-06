@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tipos de Transiciones</title>
+	<style>
+		#contenedor{
+			width: 100%;
+		}
+		#contenedor div{
+			border:solid 1px black;
+			height: 100px;
+			margin: 10px;
+			width: 100px;
+		}
+		#contenedor div:first-child{
+			background-color: gray;
+			transition: transform 3s linear;
+			-webkit-transition: -webkit-transform 3s linear;
+		}
+		div:nth-of-type(2){
+			background-color: red;
+			transition: transform 3s ease;
+			-webkit-transition: -webkit-transform 3s ease;
+		}
+		div:nth-of-type(3){
+			background-color: blue;
+			transition: transform 3s ease-in;
+			-webkit-transition: -webkit-transform 3s ease-in;
+		}
+		div:nth-of-type(4){
+			background-color: green;
+			transition: transform 3s ease-out;
+			-webkit-transition: -webkit-transform 3s ease-out;
+		}
+		div:nth-of-type(5){
+			background-color: yellow;
+			transition: transform 3s ease-in-out;
+			-webkit-transition: -webkit-transform 3s ease-in-out;
+		}
+		#contenedor:hover div{
+			transform: translateX(600px);
+			-webkit-transform: translateX(600px);
+		}
+	</style>
+</head>
+<body>
+	<h1>Funciones Easin</h1>
+	<div id="contenedor">
+		<div>linear</div>
+		<div>ease</div>
+		<div>ease-in</div>
+		<div>ease-out</div>
+		<div>ease-in-out</div>
+	</div>
+</body>
+</html>

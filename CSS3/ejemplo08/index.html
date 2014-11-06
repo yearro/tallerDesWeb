@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tipografía</title>
+	<style>
+	/* Safe web fonts */
+	p:nth-of-type(1){font-family: 'Times New Roman', Times, serif;}
+	p:nth-of-type(2){font-family: Georgia, Serif;}
+	p:nth-of-type(3){font-family: Arial, Helvetica, sans-serif;}
+	p:nth-of-type(4){font-family: 'Arial Black', Gadget, sans-serif;}
+	p:nth-of-type(5){font-family: Century Gothic, sans-serif;}
+	p:nth-of-type(6){font-family: Impact, Charcoal, sans-serif;}
+	p:nth-of-type(7){font-family: 'Trebuchet MS', Helvetica, sans-serif;}
+	p:nth-of-type(8){font-family: Verdana, Geneva, sans-serif;}
+	p:nth-of-type(9){font-family: 'Courier New', Courier, monospace;}
+	
+	div{
+		display: inline-block;
+		border: solid 1px black;
+		padding: 10px;
+		width: 200px;
+		/*vertical-align: top;*/
+	}
+	div:nth-of-type(1){
+		text-align: center;
+	}
+	div:nth-of-type(2){
+		text-align: left;
+	}
+	div:nth-of-type(3){
+		text-align: right;
+	}
+	div:nth-of-type(4){
+		text-align: justify;
+	}
+	div:last-child{
+		width: 300px;
+		height: 300px;
+		overflow: scroll;
+		/*overflow: hidden;*/
+		/*overflow: auto;*/
+	}
+	/*
+		http://www.dafont.com/es/
+		http://www.fontsquirrel.com/tools/webfont-generator
+		http://www.google.com/fonts
+	*/
+	@font-face {
+    font-family: 'trashcoregular';
+    src: url('webfontkit/trashco-webfont.eot'); /*ie*/
+    src: url('webfontkit/trashco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/trashco-webfont.woff') format('woff'), 
+         url('webfontkit/trashco-webfont.ttf') format('truetype'),
+         url('webfontkit/trashco-webfont.svg#trashcoregular') format('svg');/*Chrome, Opera, Safari*/
+    font-weight: normal;
+    font-style: normal;}
+    h2{
+    	font-family: 'trashcoregular';
+    	font-size: 5em;
+    	padding: 0;
+    	margin: 0;
+    }
+
+
+	
+	</style>
+</head>
+<body>
+	<h1>Familias de fuentes "Safe web fonts"</h1>
+	<p>Times New Roman</p>
+	<p>Georgia</p>
+	<p>Arial</p>
+	<p>Arial Black</p>
+	<p>Century</p>
+	<p>Impact</p>
+	<p>Trebuchet MS</p>
+	<p>Verdana</p>
+	<p>Courier</p>
+	<hr>
+
+	<h1>@font-face</h1>
+	<h2>Texto con @font-face</h2>
+	<hr>
+
+	<h1>Alineación de texto</h1>
+	<div><strong>Centrado</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, similique impedit repellat libero officia accusamus! Autem, quidem eum et culpa quasi? Hic, molestiae itaque dignissimos laboriosam cumque quas libero accusamus.</div>
+	<div><strong>Izquierda</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, similique impedit repellat libero officia accusamus! Autem, quidem eum et culpa quasi? Hic, molestiae itaque dignissimos laboriosam cumque quas libero accusamus.</div>
+	<div><strong>Derecha</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, similique impedit repellat libero officia accusamus! Autem, quidem eum et culpa quasi? Hic, molestiae itaque dignissimos laboriosam cumque quas libero accusamus.</div>
+	<div><strong>Justificado</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, similique impedit repellat libero officia accusamus! Autem, quidem eum et culpa quasi? Hic, molestiae itaque dignissimos laboriosam cumque quas libero accusamus.</div>
+	<hr>
+	<h1>Formateo de texto</h1>
+		
+	<div style="text-transform: none;vertical-align: top;">
+		<h1>Original</h1>
+		Lorem ipsum dolor sit amet...
+	</div> 
+	<div style="text-transform: capitalize;">
+		<h1>text-transform: capitalize</h1>
+		Lorem ipsum dolor sit amet...
+	</div>
+	<div style="text-transform: lowercase">
+		<h1>text-transform: lowercase</h1>
+		Lorem ipsum dolor sit amet...
+	</div>
+	<div style="text-transform: uppercase">
+		<h1>text-transform: uppercase</h1>
+		Lorem ipsum dolor sit amet...
+	</div>
+	<hr>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, mollitia, necessitatibus, distinctio rerum ipsa fuga nobis ullam sit sequi explicabo rem fugiat vel voluptatum velit eos veritatis et commodi consectetur.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, dolorum, earum, perspiciatis aliquam tempora labore asperiores nulla suscipit aperiam cumque cupiditate recusandae placeat itaque quis dolores maiores vero illo sint.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, magni voluptate aperiam error corporis ad ducimus laudantium adipisci illo vero et quo est tempora earum nostrum asperiores voluptas minus quod.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, error tenetur nemo doloribus nam natus ipsum praesentium facilis at laudantium illum debitis dicta sint sequi tempora exercitationem nulla inventore reiciendis.
+	</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+Titulo en ventana Ejemplo del taller de Desarrollo Web HTML 5, CSS 3 y JavaScriptb
+imagen logo.png Arquitectura Web
+Título Página Arquitectura WEB
+Menú Home,Artículos,Contacto
+ De la misma forma en que los arquitectos tradicionales diseñan y coordinan la construcción de edificios, los arquitectos web diseñan y coordinan el desarrollo de sitios web.
+ Los sitios web son una conjunción muy compleja de distintos sistemas integrados entre sí (Bases de datos, servidores, redes, componentes de backup y seguridad, etc... ).
+El resultado final será un sitio que pueda resolver las necesidades de negocios: Vender productos y servicios online y servir mejor a las necesidades de los clientes.
+En el diseño de sitios web, igual que en el diseño de edificios, se requiere un firme conocimiento de las tecnologías aplicadas.
+En el diseño de edificios estos conocimientos son sobre las propiedades estructurales de los materiales, electricidad, mecánica, plomería, etc... en el desarrollo web se requieren de conocimientos de lenguajes programación y estructura de bases de datos, el protocolo TCP/IP, el lenguaje HTML y muchos otros.
+En ambos casos es necesario tener conocimientos generales y ser un voraz estudiante de las tecnologías, dado que estas están en continuo desarrollo y avanzan día a día.
+Sin embargo, hay algo que se mantiene constante... la gente debe poder usarlos. Sino se irán de nuestra web y será un fracaso. Y se desperdiciaría una gran cantidad de dinero.
+El rol de arquitecto web es asegurarse de que esto no ocurra.
+Consejos en torno a la arquitectura de la información en el diseño web:
+Ha de buscarse la máxima atomización de la información. Se trata de desglosar las unidades complejas de contenidos en otras más básicas y sencillas de identificar.
+Debe organizarse la información en áreas y secciones concretas.
+Definir la trascendencia de cada sección, en función del objetivo general de la web.
+Adecuar la estructura para lograr priorizar las áreas más destacadas o importantes del sitio.
+
+www-diagram.gif Diagrama de una arquitectura de una aplicación web 
+Arquitectura de una aplicación Web
+Acceso de Usuario:
+Email:
+Contraseña:
+botón Iniciar Sesión
+
+Sitios de interés	 	
+icon-twitter
+icon-facebook
+icon-google-plus
+icon-feed
+icon-github
+icon-apple
+icon-windows8
+icon-pinterest
+icon-html5
+icon-css3
+
+video Samsung_Flexible_DisplayCES_2013.mp4 ó Samsung_Flexible_DisplayCES_2013.ogg
+
+widget Twitter
+
+Derechos reservados @ 2013-2014 DGB

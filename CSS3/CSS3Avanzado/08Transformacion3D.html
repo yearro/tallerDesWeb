@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Transformaciones 3D</title>
+	<style>
+	#contenedor{
+		margin:200px 0 0 200px;
+		
+	}
+	#contenedor div{
+		display: inline-block;
+		margin: 10px;
+		width: 100px;
+		height: 200px;
+		border:solid 1px;
+		transition: all 3s linear;
+		-webkit-transition: all 3s linear;
+	}
+	#contenedor:hover :nth-of-type(1){
+		transform: rotateX(180deg);
+		-webkit-transform: rotateX(180deg);
+	}
+	#contenedor:hover :nth-of-type(2){
+		transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
+	}
+	#contenedor:hover :nth-of-type(3){
+		transform: rotateZ(180deg);
+		-webkit-transform: rotateZ(180deg);
+	}
+	#contenedor:hover :nth-of-type(4){
+		transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+		-webkit-transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+	}
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<div>rotateX</div>
+		<div>rotateY</div>
+		<div>rotateZ</div>
+		<div>Todos</div>
+	</div>
+</body>
+</html>

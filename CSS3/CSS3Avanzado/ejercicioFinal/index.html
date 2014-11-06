@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio Final</title>
+	<style>
+		body{
+			padding: 20px;
+		}
+		#wrapper{
+			background: url(lluviaEFE.jpg);
+			height: 537px;
+			width: 800px;
+			position: relative;
+			overflow: hidden;
+		}
+		#nivelAgua{
+			background-color:#28C2EF;
+			filter: alpha(opacity=70);
+			opacity:0.7;
+			width: 100%;
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+			/*	http://www.colourlovers.com/	*/
+			animation:anima 10s;
+			-webkit-animation:anima 10s;
+			animation-iteration-count:infinite;
+			-webkit-animation-iteration-count:infinite;
+		}
+		/* http://www.soundjay.com/ */
+		@keyframes anima{
+			0%   {height: 20px;}
+			50%  {height: 100px;}
+			100% {height: 20px;}
+		}
+		@-webkit-keyframes anima{
+			0%   {height: 20px;}
+			50%  {height: 100px;}
+			100% {height: 20px;}
+		}
+		.gotas{
+			display: inline-block;
+			position: absolute;
+			color:#28C2EF;
+			filter: alpha(opacity=70);
+			opacity:0.7;
+			transform: scale(2,2) rotate(180deg);
+			-ms-transform: scale(2,2) rotate(180deg);
+			-webkit-transform: scale(2,2) rotate(180deg);
+			top: -20px; /* Para ocultar las gotas */
+		}
+		#gota1{
+			right: 10px;
+			animation:animaGota 4s linear 3s infinite;
+			-webkit-animation:animaGota 4s linear 3s infinite;
+		}
+		#gota2{
+			right: 30px;
+			animation:animaGota 5s ease infinite;
+			-webkit-animation:animaGota 5s ease infinite;
+		}
+		#gota3{
+			right: 55px;
+			animation:animaGota 3s ease-in-out infinite;
+			-webkit-animation:animaGota 3s ease-in-out infinite;
+		}
+		#gota4{
+			right: 72px;
+			animation:animaGota 4s ease-in 2s infinite;
+			-webkit-animation:animaGota 4s ease-in 2s infinite;
+		}
+		#gota5{
+			right: 485px;
+			animation:animaGota 3s ease-out 4s infinite;
+			-webkit-animation:animaGota 3s ease-out 4s infinite;
+		}
+		#gota6{
+			right: 600px;
+			animation:animaGota 2s ease-in 4s infinite;
+			-webkit-animation:animaGota 2s ease-in 4s infinite;
+		}
+		#gota7{
+			right: 700px;
+			animation:animaGota 3s ease-in 1s infinite;
+			-webkit-animation:animaGota 3s ease-in 1s infinite;
+		}
+		#gota8{
+			right: 450px;
+			animation:animaGota 3s ease-out infinite;
+			-webkit-animation:animaGota 3s ease-out infinite;
+		}
+		#gota9{
+			right: 160px;
+			animation:animaGota 4s ease-in-out infinite;
+			-webkit-animation:animaGota 4s ease-in-out infinite;
+		}
+		#gota10{
+			right: 220px;
+			animation:animaGota 3s ease-in infinite;
+			-webkit-animation:animaGota 3s ease-in infinite;
+		}
+		#gota11{
+			right: 95px;
+			animation:animaGota 3s ease infinite;
+			-webkit-animation:animaGota 3s ease infinite;
+		}
+		#gota12{
+			right: 200px;
+			animation:animaGota 3s ease-out 1s infinite;
+			-webkit-animation:animaGota 3s ease-out 1s infinite;
+		}
+		#gota13{
+			right: 250px;
+			animation:animaGota 3s ease-out infinite;
+			-webkit-animation:animaGota 3s ease-out infinite;
+		}
+		#gota14{
+			right: 320px;
+			animation:animaGota 3s ease-in 4s infinite;
+			-webkit-animation:animaGota 3s ease-in 4s infinite;
+		}
+		#gota15{
+			right: 380px;
+			animation:animaGota 3s linear 1s infinite;
+			-webkit-animation:animaGota 3s linear 1s infinite;
+		}
+		#gota16{
+			right: 400px;
+			animation:animaGota 4s ease 1s infinite;
+			-webkit-animation:animaGota 4s ease 1s infinite;
+		}
+		#gota17{
+			right: 520px;
+			animation:animaGota 3s ease-in-out infinite;
+			-webkit-animation:animaGota 3s ease-in-out infinite;
+		}
+		#gota18{
+			right: 650px;
+			animation:animaGota 3s ease-in-out infinite;
+			-webkit-animation:animaGota 3s ease-in-out infinite;
+		}
+		#gota19{
+			right: 730px;
+			animation:animaGota 4s linear 2s infinite;
+			-webkit-animation:animaGota 4s linear 2s infinite;
+		}
+		#gota20{
+			right: 780px;
+			animation:animaGota 4s ease-in 4s infinite;
+			-webkit-animation:animaGota 4s ease-in 4s infinite;
+		}
+
+		@keyframes animaGota{
+			from{bottom: 0px}
+			to{top: 550px;}
+		}
+		@-webkit-keyframes animaGota{
+			from{bottom: 0px}
+			to{top: 550px;}
+		}
+	</style>
+</head>
+<body>
+</body>
+	<div id="wrapper">
+		<div id="gota1" class="gotas">'</div>
+		<div id="gota2" class="gotas">'</div>
+		<div id="gota3" class="gotas">'</div>
+		<div id="gota4" class="gotas">'</div>
+		<div id="gota5" class="gotas">'</div>
+		<div id="gota6" class="gotas">'</div>
+		<div id="gota7" class="gotas">'</div>
+		<div id="gota8" class="gotas">'</div>
+		<div id="gota9" class="gotas">'</div>
+		<div id="gota10" class="gotas">'</div>
+		<div id="gota11" class="gotas">'</div>
+		<div id="gota12" class="gotas">'</div>
+		<div id="gota13" class="gotas">'</div>
+		<div id="gota14" class="gotas">'</div>
+		<div id="gota15" class="gotas">'</div>
+		<div id="gota16" class="gotas">'</div>
+		<div id="gota17" class="gotas">'</div>
+		<div id="gota18" class="gotas">'</div>
+		<div id="gota19" class="gotas">'</div>
+		<div id="gota20" class="gotas">'</div>
+		<div id="nivelAgua"></div>
+	</div>
+	<!-- <audio controls autoplay> -->
+	<!-- <audio autoplay loop> -->
+	<audio>
+		<source src="rain_01.ogg" type="audio/ogg">
+		<source src="rain_01.mp3" type="audio/mpeg">
+		Este navegador no soporta el elemento audio
+	</audio>
+</html>

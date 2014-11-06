@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'phantomultra_light';
+    src: url('fuentes/phantom_ultra_light-webfont.eot');
+    src: url('fuentes/phantom_ultra_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fuentes/phantom_ultra_light-webfont.woff') format('woff'),
+         url('fuentes/phantom_ultra_light-webfont.ttf') format('truetype'),
+         url('fuentes/phantom_ultra_light-webfont.svg#phantomultra_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+	display: block;
+}
+/*
+/// Asignación de Estilos
+	-Por Etiqueta
+	-Por DOM
+	-Por class
+	-Por id
+*/
+body{
+	background: #FFFFFF;
+	font-family: Century Gothic, sans-serif;
+	font-size: 16px;
+	margin: 0px; /* Buenas prácticas "Caprichos" */
+	padding: 0px;
+}
+/* 
+/// Asignación de Colores:
+	nombre => brue,red,black,LightGray,DimGrey,CornflowerBlue,aquamarine,turquoise
+	RGB (Red, Green, Blue) => rgb(256,0,0)
+	Hex => #ff0000
+	http://www.colourlovers.com/
+
+/// Safe web fonts
+	font-family: 'Times New Roman', Times, serif;
+	font-family: Georgia, Serif;
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
+	font-family: Century Gothic, sans-serif;
+	font-family: Impact, Charcoal, sans-serif;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
+	font-family: 'Courier New', Courier, monospace;
+
+/// Modelo de Caja
+	margin (Margen Externo)
+	padding (Margen Interno)
+
+	margin: x x x x; = 	margin-top, margin-right, margin-bottom, margin-left
+	padding: x x x x; = padding-top, padding-right, padding-bottom, padding-left
+*/
+header {
+	background: #1a1a1a;
+	
+}
+/*
+/// width, para el tamaño de un elemento.
+	Páginas de tamaño estático
+	Páginas líquidas
+	Diseño Adaptable (Responsive Desing)
+*/
+header div{
+	width: 80%;
+	margin:auto;
+}
+header h1{
+	color: #00CCFF;
+	display: inline-block; /*Quita el modelo de caja al 100%*/
+	font-family: 'phantomultra_light';
+	font-size: 3em;
+	margin: 15px 0px;
+}
+header div figure img{
+	width: 90px;
+}
+header div figure{
+	float: left;
+	position: relative;
+	z-index: 5;
+	margin-right: 20px;
+}
+/*
+/// Reducción de algunas características
+	border: 1px solid gray;
+*/
+nav{
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	background-color: #2a2a2a;
+	border-bottom: 8px solid #00CCFF; 
+}
+nav div{
+	width: 80%;
+	margin: auto;
+}
+nav div ul{
+	list-style: none; /*Para quitar el estilo de la lista*/
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+nav div ul li {
+	display: inline-block;
+	margin: 0.3em 0.8em 0.3em 0;
+}
+.item a{
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+}
+.item a:hover{
+	color: #00CCFF;
+}
+
+/*
+/// Tipos de font-size
+	-Tamaño en Pixeles
+	-Tamaño Relativo al último declarado (em)
+	-Tamaño Relativo al primer declarado (rem)
+	-Tamaño en porcentaje
+*/
+section{
+	width: 80%;
+	margin: auto;
+	background: white;
+	clear:both;
+	padding: 0px;
+
+}
+article{
+	display: inline-block;
+	width: 69%;
+	/*border:1px solid #333;
+	background: #999; Separación de las div inline-block*/ 
+	margin: 0px;
+	border-right: 1px grey dotted;
+}
+/*
+/// Tipos de borde: solid, dotted, double, dashed, groove, ridge, inset, outset
+*/
+aside{
+	display: inline-block;
+	/*border:1px solid #333;
+	background: #999; Separación de las div inline-block*/
+	margin: 0px;
+	text-align: center;
+	vertical-align: top;
+	width: 30%;
+	border-right: 1px grey dotted;
+}
+aside p {
+	text-align:center;
+}
+aside ul {
+	list-style: none;
+}
+aside ul li a{
+	text-decoration: none;
+}
+aside form{
+	font-size: 0.8em;
+}
+aside form fieldset{
+	width: 80%;
+	margin: auto;
+	margin-top: 10px;
+	text-align: right;
+	/*font-size: 0.8em;*/
+}
+aside form fieldset legend{
+	text-align: center;
+}
+aside form fieldset input{
+	font-size: 0.8em;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+aside form fieldset button{
+	font-size: 0.8em;
+	display: block;
+	margin: auto; 
+}
+aside div{
+	width: 80%;
+	margin: auto;
+}
+footer{
+	background: #1a1a1a;
+	margin-top: 1em;
+	padding: 2em 0;
+	border-top: 8px solid #00CCFF;
+}
+footer div{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	color: white;
+}
+p {
+	text-align : justify;
+	padding: 0px 5px;
+}
+aside p{
+	padding: 0px;
+	margin: 5px;
+}
+figure{
+	margin: auto;
+	text-align: center;
+}
+video{
+	width: 80%;
+}
+/* ////////////////////////////////////////////// */
+.box1 {
+		font-size: 1.5em;
+		display: inline-block;
+		width: auto;
+		padding: .25em .5em;
+		background: #eee;
+		margin: .5em 1em .5em 0;
+	}
+/* /////////////////////////////////////////////// */
+@media all and (max-width: 800px){
+	article, aside{
+		display: block;
+		margin-top: 0px;
+		width: 100%;
+	}
+	video{
+		display: none
+	}
+}

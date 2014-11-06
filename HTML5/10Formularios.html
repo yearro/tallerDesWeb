@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formularios</title>
+</head>
+<body>
+	<form method="POST" action="10FormulariosRespuesta.php">
+		<p>
+			<label for="usuario">Usuario</label>
+			<input type="text" name="usuario" id="usuario" value="">
+		</p>
+		<p>
+			<label for="contrasena">Contraseña</label>
+			<input type="password" name="contrasena" id="contrasena">
+		</p>
+		<input type="hidden" value="12" name="escondido" id="escondido">
+		<p>
+			<label for="archivo">Elige un Archivo</label>
+			<input type="file" name="archivo" id="archivo">	
+		</p>
+		<fieldset>
+			<legend>Selecciona un color:</legend>
+			<input type="radio" name="color" value="Rojo">Rojo
+			<input type="radio" name="color" value="Verde">Verde
+			<input type="radio" name="color" value="Azul">Azul
+			<input type="radio" name="color" value="Negro">Negro
+		</fieldset><br>
+		<fieldset>
+			<legend>
+				Seleccione los temas de su interés:</legend>
+				<input type="checkbox" name="interes_uno" value="Arte y Cultura">Arte y Cultura<br>
+				<input type="checkbox" name="interes_dos" value="Ciencia">Ciencia<br>
+				<input type="checkbox" name="interes_tres" value="Música">Música<br>
+				<input type="checkbox" name="interes_cuatro" value="Cine">Cine<br>
+		</fieldset><br>
+		<label for="mensaje">Área de texto</label><br>
+		<textarea name="mensaje" id="mensaje" cols="20" rows="5"></textarea>
+		<hr>
+		<label for="recintos">Ejemplo de Combo</label><br>
+		<select name="recintos" id="recintos">
+			<option value="1">Edificio Sede del IVEC</option>
+			<option value="2">Las Atarazanas</option>
+			<option value="3">Recinto de la Reforma</option>
+			<option value="4">Museo de la Ciudad</option>
+			<option value="5">Centro Veracruzano de las Artes</option>
+			<option value="6">Casa Principal</option>
+			<option value="7">Casa Museo Agustín Lara</option>
+			<option value="8">Museo Naval</option>
+			<option value="9">Archivo y Bilioteca Históricos</option>
+		</select><hr>
+		<label for="recintos2">Ejemplo de Lista Desplegada</label><br>
+		<select name="recintos2" id="recintos2" multiple>
+			<option value="1">Edificio Sede del IVEC</option>
+			<option value="2">Las Atarazanas</option>
+			<option value="3">Recinto de la Reforma</option>
+			<option value="4">Museo de la Ciudad</option>
+			<option value="5">Centro Veracruzano de las Artes</option>
+			<option value="6">Casa Principal</option>
+			<option value="7">Casa Museo Agustín Lara</option>
+			<option value="8">Museo Naval</option>
+			<option value="9">Archivo y Bilioteca Históricos</option>
+		</select><hr>
+		<!--<button type="submit">Enviar</button>
+		<button type="reset">Reestablecer</button>
+		<input type="submit">
+		<input type="reset">-->
+		<input type="submit" value="Ir al siguiente paso">
+		<input type="reset" value="Reiniciar valores">
+		<input type="button" value="Nada">
+	</form>
+</body>
+</html>

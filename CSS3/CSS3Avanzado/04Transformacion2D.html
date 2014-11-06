@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Transformaciones 2D</title>
+	<style>
+		div{
+			border: solid 1px black;
+			height: 100px;
+			padding: 5px;
+			width: 200px;
+		}
+		/*div:first-child*/
+		div:first-of-type{
+			background-color: green;
+			/*Transformación por rotación*/
+			transform: rotate(40deg);
+			-ms-transform: rotate(40deg); /* IE 9 */
+			-webkit-transform: rotate(40deg); /* Safari and Chrome */
+			/*-webkit-transform:matrix(0.866,0.5,-0.5,0.866,0,0);*/
+		}
+		div:nth-of-type(2){
+			background-color: blue;
+			color: white;
+			transform:translate(100px,50px);
+			-ms-transform:translate(100px,50px); /* IE 9 */
+			-webkit-transform:translate(100px,50px); /* Safari and Chrome */
+		}
+		div:nth-of-type(3){
+			background-color: red;
+			transform: scale(2,2);
+			-ms-transform: scale(2,2); /* IE 9 */
+			-webkit-transform: scale(2,2); /* Safari and Chrome */
+		}
+		div:nth-of-type(4){
+			background-color: yellow;
+			transform: skew(30deg,20deg);
+			-ms-transform: skew(30deg,20deg); /* IE 9 */
+			-webkit-transform: skew(30deg,20deg); /* Safari and Chrome */
+		}
+	
+	</style>
+</head>
+<body>
+	<h2>Ejemplo de Rotación</h2>
+	<div>Ejemplo de rotación de elementos CSS 3</div>
+	<hr>
+	<h2>Ejemplo de Movimiento</h2>
+	<div>Ejemplo de traslación de elementos CSS 3</div>
+	<hr>
+	<h2>Ejemplo de escala</h2>
+	<div>Ejemplo de escala de elementos CSS 3</div>
+	<h2>Ejemplo de ángulo</h2>
+	<div>Ejemplo de ángulo de elementos CSS 3</div>
+</body>
+</html>

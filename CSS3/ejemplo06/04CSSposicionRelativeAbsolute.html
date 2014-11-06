@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Posicion DIVS</title>
+	<style>
+	div{
+		padding: 10px;
+	}
+	#capa1{
+		background: black;
+		color: white;
+		width: 80%;
+		margin: auto;
+		height: 500px;
+		position: relative; 
+		/* 
+		Si se agrega relative al contenedor padre 
+		las capas absolute internas toman su posicion
+		en referencia a las esquinas de la capa
+		contenedora.
+		*/
+	}
+	#capa2{
+		background: blue;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+	}
+	#capa3{
+		background: red;
+	}
+	#capa4{
+		background: gray;
+	}
+	#capa5{
+		background: yellow;
+	}
+	</style>
+</head>
+<body>
+	<div id="capa1">
+		Capa 1
+		<div id="capa2">
+			Capa 2
+			<div id="capa3">
+				Capa 3
+			</div>
+		</div>
+		<div id="capa4">Capa 4</div>
+		<div id="capa5">Capa 5</div>
+	</div>
+</body>
+</html>

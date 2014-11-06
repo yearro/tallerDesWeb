@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posicion DIVS</title>
+	<style>
+	div{
+		padding: 10px;
+	}
+	#capa1{
+		background: black;
+		color: white;
+		margin: auto;
+		overflow: hidden; 
+		/*La propiedad overflow indica qué sucede si el contenido desborda la caja de un elemento.*/
+		width: 80%;
+	}
+	#capa2{
+		background: blue;
+		float: left;
+		width: 30%;
+	}
+	#capa3{
+		background: red;
+	}
+	#capa4{
+		background: gray;
+		float: right;
+		width: 65%;
+		height: 400px;
+	}
+	#capa5{
+		background: yellow;
+		clear: both;
+		/*Especifica que a partir de aqui ningun elemento flotara ni a la dereche ni a la izquierda*/
+	}
+	</style>
+</head>
+<body>
+	<div id="capa1">
+		<div id="capa2">
+			Capa 2
+			<div id="capa3">
+				Capa 3
+			</div>
+		</div>
+		<div id="capa4">Capa 4</div>
+		<div id="capa5">Capa 5</div>
+	</div>
+</body>
+</html>

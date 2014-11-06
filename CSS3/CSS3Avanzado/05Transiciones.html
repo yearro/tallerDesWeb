@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Transiciones</title>
+	<style>
+		div{
+			width: 200px;
+			height: 200px;
+			border:solid 1px black;
+			
+			/* Paso a paso */
+			-webkit-transition-property:width,background-color,-webkit-transform;
+			-webkit-transition-duration:2s,2s,0.5s;
+			-webkit-transition-timing-function:ease-in-out;
+
+			/*transition-property:width,background-color,transform;
+			transition-duration:2s,2s,0.5s;
+			transition-timing-function:ease-in-out;*/
+
+			/* Ordenadas */
+			/*transition: width 2s, background-color 2s,transform 0.5s;
+			-webkit-transition: width 2s, background-color 2s,-webkit-transform 0.5s;*/
+
+			/* Todas */
+			/*transition: all 0.5s linear;
+			-webkit-transition: all 0.5s linear;*/
+
+			/*Múltiples transiciones*/
+			/*transition: width 1s, background-color 0.5s, transform 1s;
+			-webkit-transition: width 1s,background-color 0.5s,-webkit-transform 1s;*/
+			
+		}
+		div:hover{
+			width:300px;
+			background-color: red;
+			transform: rotate(40deg); 
+			-webkit-transform: rotate(40deg);
+			/*transform: rotate(40deg) translate(100px,50px);
+			-webkit-transform: rotate(40deg) translate(100px,50px);*/
+		}
+	</style>
+</head>
+<body>
+	<div>Hola</div>
+</body>
+</html>

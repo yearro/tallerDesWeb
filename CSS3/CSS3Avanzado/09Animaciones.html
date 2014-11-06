@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Animaciones</title>
+	<style>
+		div:first-child{
+			background-color: yellow;
+			border:solid 1px;
+			margin: 20px;
+			padding: 20px;
+			width: 300px;
+			text-align: center;
+			animation:anima anima 5s;
+			-webkit-animation:anima 5s;
+			/*animation:anima anima 5s linear 2s 3 reverse;
+			-webkit-animation:anima 5s linear 2s 3 reverse;*/
+			
+			/*animation-iteration-count:infinite;
+			animation-timing-function:linear;
+			animation-delay:2s;
+			-webkit-animation-iteration-count:infinite;
+			-webkit-animation-timing-function:linear;
+			-webkit-animation-delay:2s;*/
+		}
+		@keyframes anima{
+			from{width: 300px;background-color: yellow;}
+			to{width: 200px;background-color: red;}
+		}
+		@-webkit-keyframes anima{
+			from{width: 300px;background-color: yellow;}
+			to{width: 200px;background-color: red;}
+		}
+		
+		div:nth-of-type(2){
+			background-color: green;
+			border:solid 1px;
+			margin: 20px;
+			padding: 20px;
+			width: 300px;
+			text-align: center;
+			position:relative; /*Para activar los atributos top, botton, left, right*/
+			animation:anima animaDos 5s;
+			-webkit-animation:animaDos 5s;
+			-webkit-animation-iteration-count:infinite;
+			animation-iteration-count:infinite;
+		}
+		@keyframes animaDos{
+			0%   {background:red; left:0px; top:0px;}
+			25%  {background:yellow; left:200px; top:0px;}
+			50%  {background:blue; left:200px; top:200px;}
+			75%  {background:green; left:0px; top:200px;}
+			100% {background:red; left:0px; top:0px;}
+		}
+		@-webkit-keyframes animaDos{
+			0%   {background:red; left:0px; top:0px;}
+			25%  {background:yellow; left:200px; top:0px;}
+			50%  {background:blue; left:200px; top:200px;}
+			75%  {background:green; left:0px; top:200px;}
+			100% {background:red; left:0px; top:0px;}
+		}
+		
+	</style>
+</head>
+<body>
+	<div>Animación  from...to</div>
+	<hr>
+	<div>Animación por porcentajes</div>
+</body>
+</html>

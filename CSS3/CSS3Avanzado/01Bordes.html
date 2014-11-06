@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bordes CSS 3</title>
+</head>
+	<style>
+		div{
+			border:2px solid #a1a1a1;
+			background:#dddddd;
+			padding:20px;
+			text-align: center;
+		}
+		.box{
+			/*display: inline-block;*/
+			-moz-border-radius: 25px;
+			-webkit-border-radius: 25px;
+			border-radius: 25px;
+		}
+		.box2{
+			/*
+				http://cssprefixer.appspot.com/
+			*/
+			-webkit-border-top-left-radius: 25px;
+    	-moz-border-radius-topleft: 25px;
+    	border-top-left-radius: 25px;
+
+    	-webkit-border-top-right-radius: 25px;
+    	-moz-border-radius-topright: 25px;
+    	border-top-right-radius: 25px;
+
+    	/*-webkit-border-bottom-left-radius: 25px;
+    	-moz-border-radius-bottomleft: 25px;
+    	border-bottom-left-radius: 25px;*/
+
+    	/*-webkit-border-bottom-right-radius: 25px;
+    	-moz-border-radius-bottomright: 25px;
+    	border-bottom-right-radius: 25px;*/    	 
+		}
+	</style>
+<body>
+	<div class="box">Todas las esquinas con bordes</div>
+	<hr>
+	<div class="box2">Esquinas independientes</div>	
+</body>
+</html>

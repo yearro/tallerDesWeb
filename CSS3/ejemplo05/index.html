@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Modelo de Caja</title>
+	<style>
+		div:nth-of-type(2){
+			/*width: 80%;
+			width: 40px;
+			width: auto;
+			width: inherit;
+			*/
+			width: 20em;
+		}
+		div:nth-of-type(3){
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+		span{
+			width: 300px;
+			/*No se aplica a elementos en línea*/
+		}
+		
+		div:nth-of-type(4){
+			width: 80%;
+			border: solid 1px red;
+			margin: auto;
+		}
+		div:nth-of-type(5){
+			width: 80%;
+			
+			/*Borde Superior*/
+			border-top-style: solid;
+			border-top-color: #CC0000;
+			border-top-width: 4px;
+			/*Borde Inferior*/
+			border-bottom-style: dashed;
+			border-bottom-color: #00FF00;
+			border-bottom-width: 4px;
+			/*Borde Derecho*/
+			border-right-style: double;
+			border-right-color: blue;
+			border-right-width: 4px;
+			/*Borde Izquierdo*/
+			border-left-style: dotted;
+			border-left-color: #CCC;
+			border-left-width: 4px;
+			margin: auto;
+		}
+		/*
+			Modelo de Caja
+			margin (Margen Externo)
+			padding (Margen Interno)
+			margin: x x x x; = 	margin-top, margin-right, margin-bottom, margin-left
+			padding: x x x x; = padding-top, padding-right, padding-bottom, padding-left
+		*/
+		div:nth-of-type(6){
+			width: 80%;
+			border:solid 1px blue;
+			margin: auto;
+			margin-top: 200px;
+
+		}
+		div:nth-of-type(7){
+			width: 80%;
+			border:solid 1px blue;
+			margin: auto;
+			margin-top: 20px;
+			padding: 20px;
+
+		}
+		
+		.centrarHV{
+     		background-color: #FF9;
+     		position: absolute;
+     		/*position: fixed;*/
+     		height: 200px;
+			width: 300px;
+			left: 50%;
+			top: 50%;
+			margin-top: -100px;
+			margin-left: -150px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Lorem ipsum dolor sit amet, <span>consectetur adipisicing</span> elit. Officiis, architecto accusamus iste odio quae ea libero veritatis cupiditate laborum beatae explicabo nostrum reiciendis ratione corporis consectetur nam fugiat inventore quaerat!</p>
+	</div>
+	<div>
+		<p>Lorem ipsum dolor sit amet, <span>consectetur adipisicing</span> elit. Officiis, architecto accusamus iste odio quae ea libero veritatis cupiditate laborum beatae explicabo nostrum reiciendis ratione corporis consectetur nam fugiat inventore quaerat!</p>
+	</div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, quod, quia, in facilis quae mollitia impedit odit ducimus nesciunt amet ea itaque dolore totam fugit ipsa magnam repellendus repudiandae reiciendis. <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, reiciendis, rem, ratione, magni expedita neque odio velit commodi repellendus tenetur doloremque incidunt quae sed quisquam aut vel minus voluptates suscipit.--></div><br>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, praesentium, porro, quod aspernatur laudantium reprehenderit laboriosam rem cumque sint placeat accusamus id aliquam iusto voluptatibus illo animi ea ex et.</div><br>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, praesentium, porro, quod aspernatur laudantium reprehenderit laboriosam rem cumque sint placeat accusamus id aliquam iusto voluptatibus illo animi ea ex et.</div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, praesentium, porro, quod aspernatur laudantium reprehenderit laboriosam rem cumque sint placeat accusamus id aliquam iusto voluptatibus illo animi ea ex et.</div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, praesentium, porro, quod aspernatur laudantium reprehenderit laboriosam rem cumque sint placeat accusamus id aliquam iusto voluptatibus illo animi ea ex et.</div>
+	<div class="centrarHV">Centrado de una capa</div>
+
+
+	
+</body>
+</html>

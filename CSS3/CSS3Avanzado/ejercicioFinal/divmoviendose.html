@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Div moviendose</title>
+	<style>
+	/* http://cssanimate.com */ 
+	div{
+		
+		background: green;
+		color: white;
+		width: 100px;
+		text-align: center;
+		height: 60px;
+		padding-top: 20px;
+		border:2px solid;
+		border-radius:15px;
+		position: absolute;
+		animation:anima 5s ease-in;
+		-webkit-animation:anima 5s;
+	}
+	@keyframes anima{
+		0% {background: red;}
+		10% {
+			transform: rotate(-40deg);
+			-ms-transform: rotate(-40deg);
+			-webkit-transform: rotate(-40deg);
+		}
+		40%{background: blue}
+ 		41%  {
+ 			transform: rotateX(180deg);
+ 			-ms-transform:translateX(180px);
+			-webkit-transform: rotateX(180deg);
+ 		}
+ 		70%{
+			transform:translateX(600px);
+			-ms-transform:translateX(600px);
+			-webkit-transform:translateX(600px);
+		}
+ 		90% {
+			transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	@-webkit-keyframes anima{
+		0%   {background: red;}
+		10% {
+			transform: rotate(-40deg);
+			-ms-transform: rotate(-40deg);
+			-webkit-transform: rotate(-40deg);
+		}
+		40%{background: blue}
+ 		41%  {
+ 			transform: rotateX(180deg);
+			-webkit-transform: rotateX(180deg);
+ 		}
+ 		70%{
+			transform:translateX(600px);
+			-ms-transform:translateX(600px);
+			-webkit-transform:translateX(600px);
+		}
+ 		90% {
+			transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-webkit-transform: rotate(360deg);
+		}
+	}
+	</style>
+</head>
+<body>
+	<div>Animación <br>
+		CSS 3</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Posicion DIVS</title>
+	<style>
+	div{
+		padding: 10px;
+	}
+	#capa1{
+		background: black;
+		color: white;
+		width: 80%;
+		margin: auto;
+		height: 900px;
+	}
+	#capa2{
+		background: blue;
+		position: fixed;
+		right: 0px;
+		top: 0px;
+	}
+	#capa3{
+		background: red;
+	}
+	#capa4{
+		background: gray;
+	}
+	#capa5{
+		background: yellow;
+	}
+	/* 
+		position: fixed; // 	Se activan las opciones top, button, left, right
+		Independiente del Scroll, no se mueve de la pantalla: em;
+	*/
+	</style>
+</head>
+<body>
+	<div id="capa1">
+		Capa 1
+		<div id="capa2">
+			Capa 2
+			<div id="capa3">
+				Capa 3
+			</div>
+		</div>
+		<div id="capa4">Capa 4</div>
+		<div id="capa5">Capa 5</div>
+	</div>
+</body>
+</html>

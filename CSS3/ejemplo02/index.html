@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selectores</title>
+	<link rel="stylesheet" href="../ejemplo01/normalize.css">
+	<style>
+	p{
+		color: white; 
+		/*Para color de texto*/
+	}
+	.Parrafo{
+		color: brown;
+	}
+	#idParrafo{
+		color: gray;
+	}
+	/*Pseudo-classes*/
+	p:first-letter {
+		font-size:40px;
+		/*Tamaño de la fuente*/ 
+	}
+	p:before{
+  		content: '->'; 
+	}
+	p:after{
+  		content: '******';
+  		/*Insertar contenido dinámicamente*/
+	}
+	p:first-of-type {
+  		background: black;
+  		/*Cambiar el color de fondo del elemento*/
+	}
+	p:nth-of-type(2) {
+  		background: orange;
+	}
+	li:first-child{
+		text-decoration: underline;
+		/*Define una línea debajo del texto*/
+	}
+	li:last-child {
+		font-weight:bold;
+		/*Texto en negrita*/
+	}
+	li:nth-of-type(3) {
+  		text-decoration:line-through;
+  		/*Texto tachado*/
+	}
+	span:last-child{
+		font-size: 30px;
+	}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, soluta, asperiores pariatur beatae possimus nisi fugiat doloribus voluptas hic placeat quas ratione saepe quis praesentium minima officia veritatis deleniti illo.</p>
+
+	<p class="Parrafo">Sunt, amet porro illo dignissimos voluptate vero eveniet sed libero impedit provident obcaecati iste! Numquam, aut minus ad est earum hic assumenda aliquid praesentium libero odio cumque magni repudiandae rem.</p>
+
+	<p id="idParrafo">Aspernatur, <mark>aut</mark>, dolor, fuga non est hic eveniet provident quasi aliquam atque earum minima culpa deleniti <span>numquam repellendus</span> esse quam sint ab <span>dolores</span> cumque quae a distinctio eaque itaque recusandae!</p>
+	<ol>
+		<li>Lionel Messi (FC Barcelona)</li>
+		<li>Cristiano Ronaldo (Real Madrid)</li>
+		<li>Xavi (FC Barcelona)</li>
+		<li>Andres Iniesta (FC Barcelona)</li>
+		<li>
+			<p>Zlatan Ibrahimovic (PSG)</p>
+			<ul>
+				<li>Malmö F. F.</li>
+				<li>Ajax Ámsterdam</li>
+				<li>Juventus F. C.</li>
+				<li>Inter de Milán</li>
+				<li>C. Barcelona</li>
+				<li>C. Milan</li>
+				<li>Paris Saint-Germain</li>
+			</ul> 
+		</li>
+		<li>Radamel Falcao (Atlético Madrid)</li>
+		<li>Robin van Persie (Manchester Utd)</li>
+		<li>Andrea Pirlo (Juventus)</li>
+	</ol>
+
+</body>
+</html>

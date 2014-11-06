@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Ejemplo con media Queries</title>
+	<style>
+	body{
+		margin: 0px;
+		padding: 0px;
+	}
+	article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+		display: block;
+	}
+	header{
+		height: 100px;
+		background-color: black;
+		color: white;
+		/*position: fixed;
+		width: 100%;*/
+	}
+	header h1{
+		margin-top: 0px;
+		padding-left: 40px;
+		padding-top: 30px;
+	}
+	.content{
+		background: #DADADA;
+		color: #444;
+	}
+	article{
+		background-color: #DADADA;
+		height: 400px;
+		display: inline-block;
+		width: 70%;
+		margin: 0;
+	}
+	aside{
+		background-color: red;
+		height: 300px;
+		display: inline-block;
+		width: 30%;
+		margin: 0;
+	}
+	nav{
+		background-color: blue;
+		padding: 20px;
+		color: white;
+	}
+	footer{
+		background-color: black;
+		text-align: center;
+		/*margin-top:20px;*/
+		height: 50px;
+		color: white;
+	}
+	div{
+		width: 100%;
+		max-width: 1140px;
+		/*min-width: 755px;*/
+		margin: 0 auto;
+	}
+	/*
+		aural	Sintetizadores de voz
+		braille	Sistemas de captación braile
+		handheld Dispositivos de mano
+		projection	Proyectores
+		print	Modo de ompresión
+		screen	Pantallas
+	*/
+	/*
+		http://nmsdvid.com/snippets/
+	*/
+	/* desktop grande */
+	@media (min-width: 1200px) {
+		
+	}
+ 
+	/* Tableta (Portrait ,landscape) y desktop */
+	@media (min-width: 768px) and (max-width: 979px) {
+		
+	}
+ 
+	/* Teléfonos y tabletas (Landscape,portrait)*/
+	@media (max-width: 767px) {
+		aside,article{
+			display: block;
+			width: 100%;
+		}
+		h1{
+			font-size: 1em;
+		}
+	}
+ 
+	/* Teléfonos */
+	@media (max-width: 480px) {
+		aside:after{
+			content:"Tamaño máximo 480px";
+		}
+		article{
+			display: block;
+			width: 100%;
+		}
+		aside{
+			display: none;
+		}
+		h1{
+			font-size: 1em;
+		}
+	}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Ejemplo Grid Práctico</h1>
+	</header>
+	<nav>Este es el Menú</nav>
+	<div>
+		<article>Contenido</article><aside>Contenido Relacionado</aside>
+	</div>
+	<footer>Pie de página</footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validación mediante HTML</title>
+</head>
+<body>
+	<form method="POST" action="10FormulariosRespuesta.php">
+		<p>
+			<label for="campoSoloLectura">Campo de solo lectura</label>
+			<input type="text" name="campoSoloLectura" id="campoSoloLectura" readonly>
+		</p>
+		<p>
+			<label for="deshabilitado">Campo deshabilitado</label>
+			<input type="text" name="deshabilitado" id="deshabilitado" disabled>
+		</p>
+		<p>
+			<label for="campoTam">Campo con validado por tamaño</label>
+			<input type="text" name="campoTama" id="campoTama" maxlength="10" value="Valor por defecto" autofocus>
+		</p>
+		<p>
+			<label for="camText">Campo de texto</label><br>
+			<textarea name="camText" id="camText" cols="30" rows="5" maxlength="20"></textarea>
+		</p>
+		<p>
+			<label for="campoTama2">Campo con validado por tamaño</label>
+			<input type="text" name="campoTama2" id="campoTama2" maxlength="10" placeholder="Valor por defecto" required>
+		</p>
+		<p>
+			<input type="radio" name="grupoRadio" value="1">Normal
+			<input type="radio" name="grupoRadio" value="2" disabled>Deshabilitado
+			<input type="radio" name="grupoRadio" value="3" checked>Seleccionado por defecto
+		</p>
+		<p>
+			<input type="checkbox" name="checkUno"value="1">Normal<br>
+			<input type="checkbox" name="checkDos" value="2" disabled>Deshabilitado<br>
+			<input type="checkbox" name="checkTres" value="3" checked>Seleccionado por defecto<br>
+		</p>
+		<!-- Nuevos campos -->
+		<p>
+			<label for="emailInput">Email</label>
+			<input type="email" name="emailInput" required>
+		</p>
+		<p>
+			<label for="urlInput">URL</label>
+			<input type="url" name="urlInput" required>
+		</p>
+		<p>
+			<label for="numeroInput">Número</label>
+			<input type="number" name="numeroInput" required>
+		</p>
+		<p>
+			<label for="rangeInput">Rango</label>
+			<input type="range" name="rangeInput" required value="20">
+		</p>
+		<p>
+			<label for="fecha">Fecha </label><input type="date" name="fecha">
+		</p>
+		<p>
+			<label for="mes">Mes </label><input type="month" name="mes">
+		</p>
+		<p>
+			<label for="semana">Semana </label><input type="week" name="semana">
+		</p>
+		<p>
+			<label for="tiempo">Hora </label><input type="time" name="tiempo">
+		</p>
+		<p>
+			<label for="tiempoDos">Hora </label><input type="datetime-local" name="tiempoDos">
+		</p>
+		<p>
+			<label for="unaLista">Lista de Datos:</label>
+			<input type="text" list="unaLista">
+			<datalist id="unaLista">
+				<option value="Luz Virginia">Luz Virginia</option>
+				<option value="Christopher Enrique">Christopher Enrique</option>
+				<option value="Juan Antonio">Juan Antonio</option>
+				<option value="Luz Aranza">Luz Aranza</option>
+				<option value="America Yazmin">America Yazmin</option>
+				<option value="Ana Carolina">Ana Carolina</option>
+				<option value="Cindy Patricia">Cindy Patricia</option>
+				<option value="Paola Marai">Paola Marai</option>
+				<option value="Guadalupe">Guadalupe</option>
+			</datalist>
+  	</p>
+		<p>
+			<input type="submit">
+			<input type="reset">
+		</p>
+	</form>
+</body>
+</html>
